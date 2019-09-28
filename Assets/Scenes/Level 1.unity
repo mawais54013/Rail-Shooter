@@ -433,8 +433,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circuit: {fileID: 659338295}
-  lookAheadForTargetOffset: 5
-  lookAheadForTargetFactor: 0.1
+  lookAheadForTargetOffset: 2
+  lookAheadForTargetFactor: 0
   lookAheadForSpeedOffset: 10
   lookAheadForSpeedFactor: 0.2
   progressStyle: 0
@@ -554,8 +554,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c200c595c0e0247648338df505aac925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xSpeed: 4
+  xSpeed: 18
   xRange: 5
+  yRange: 3
+  positionPitchFactor: -5
+  controlPitchFactor: -5
+  controlRollFactor: -20
+  positionYawFactor: 5
 --- !u!1 &1317732535
 GameObject:
   m_ObjectHideFlags: 0
