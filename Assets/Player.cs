@@ -56,3 +56,6 @@ public class Player : MonoBehaviour
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
 }
+
+
+// -9.81 gravity
