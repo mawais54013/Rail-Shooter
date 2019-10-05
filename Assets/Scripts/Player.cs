@@ -16,20 +16,27 @@ public class Player : MonoBehaviour
     [SerializeField] float positionYawFactor = 5f;
 
     float xThrow, yThrow;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    bool isControlEnabled = true;
 
     // Update is called once per frame
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
-
+        if (isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
     }
+
+    void OnPlayerDeath() //called by string reference
+    {
+        isControlEnabled = false;
+    }
+
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    print("tiggered");
+    //}
 
     private void ProcessRotation()
     {
