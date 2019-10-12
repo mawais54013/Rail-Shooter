@@ -3,10 +3,9 @@
     <Files>
       <File FileName="Assets/Scripts/MusicPlayer.cs" Line="19" Column="10" />
       <File FileName="Assets/Scripts/SceneLoader.cs" />
-      <File FileName="Assets/Scripts/Player.cs" Line="39" Column="8" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="26" Column="9" />
-      <File FileName="Assets/SelfDestructor.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/ScoreBoard.cs" Line="18" Column="6" />
+      <File FileName="Assets/Scripts/Player.cs" />
+      <File FileName="Assets/Scripts/Enemy.cs" />
+      <File FileName="Assets/Scripts/ScoreBoard.cs" Line="22" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,16 +19,11 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Rail Shooter" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ec7604a5-24a3-4976-83af-c1f569695c93" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8f43a841-a810-42a9-99b2-74b881d39f1f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
