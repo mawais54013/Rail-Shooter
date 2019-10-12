@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deathFX;
     [SerializeField] Transform parent;
     [SerializeField] int scorePerHit = 12;
+    [SerializeField] int healthPoints = 10;
 
     ScoreBoard scoreBoard;
 
@@ -31,9 +32,11 @@ public class Enemy : MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         scoreBoard.ScoreHit(scorePerHit);
-        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
-        fx.transform.parent = parent;
-        Destroy(gameObject);
+        healthPoints = healthPoints - 1;
+        if(healthPoints <= 0)
+        {
+            KillEnemy();
+        }
 
 
         //var parentscale = gameObject.transform.localScale;
@@ -41,5 +44,12 @@ public class Enemy : MonoBehaviour
         //parentscale = new Vector3(parentscale.x * 0.1f, parentscale.y * 0.1f, parentscale.z * 0.1f);
         //newobject.transform.localScale = parentscale;
         //Destroy(gameObject);
+    }
+
+    private void KillEnemy()
+    {
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
+        fx.transform.parent = parent;
+        Destroy(gameObject);
     }
 }
