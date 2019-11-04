@@ -5,3 +5,24 @@ You have just entered the alien lava world to destroy a capitol ship that was lo
 Welcome to the Star Ship Shooter game, created with Unity with your objective being destroy the enemy to gain more points. 
 
 Note: This game will be updated with more enemy and ships soon, with designs currently in development. 
+
+Preview Gif Below: 
+
+![index](ScreenPreview.gif)
+
+# Getting Started 
+
+### Prerequisite
+Game can only be played on monitors or laptops 
+
+# Built With 
+- Unity
+- C#
+- Timelines 
+- Text Mesh Pro
+- Particle System
+- Skybox
+- 24 PBR Material
+- Star Sparrow
+- Standard Assets
+
